@@ -1,0 +1,7 @@
+{
+  "name": "matt_web",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/application.css">
+<link rel="stylesheet" href="../../assets/stylesheets/font-mfizz/font-mfizz.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../assets/javascripts/smooth_scroll.js"></script>
+<script>
+$(document).ready(function(){
+	$("#MAGNETIC").click(function(){
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").hide(400)
+		$("#MAGNETIC_ID").delay(300).show(400)
+	});
+	$("#REFLOW").click(function(){
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").hide(400)
+		$("#REFLOW_ID").delay(300).show(400)
+	});
+	$("#PULSE").click(function(){
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").hide(400)
+		$("#PULSE_ID").delay(300).show(400)
+	});
+	$("#RISC").click(function(){
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").hide(400)
+		$("#RISC_ID").delay(300).show(400)
+	});
+});
+</script>
+<script>
+$(document).ready(function(){
+	$("#MAG_BUTTON").click(function(){
+		$("#MAGNETIC_ID").hide(400)
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").show(400)
+	});
+	$("#REF_BUTTON").click(function(){
+		$("#REFLOW_ID").hide(400)
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").show(400)
+	});
+	$("#PUL_BUTTON").click(function(){
+		$("#PULSE_ID").hide(400)
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").show(400)
+	});
+	$("#RISC_BUTTON").click(function(){
+		$("#RISC_ID").hide(400)
+		$("#MAGNETIC,#REFLOW,#PULSE,#RISC").show(400)
+	});
+});
+</script>
+<style>
+body, html, .main {
+  height: 100%;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+h3 {
+text-shadow: 2px 2px #000000;
+}
+p {
+font-size: 2.5vh;
+}
+</style>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="https://github.com/Matt45D" target="_blank"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Github</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="https://github.com/Matt45D" target="_blank"  class="w3-bar-item w3-button w3-padding-large">Github</a>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center bg_projects" style="padding: 196px"> 	
+	<h1 class="animated fadeInDown w3-margin w3-text-white h1_project" style="text-shadow: 3px 3px #000000;padding:20px"><b>Projects<b></h1>
+	<a class="w3-button w3-black w3-padding-large button_middle w3-round w3-margin-top" href="#projects" style="font-family: Montserrat">Explore More</a>
+</header>
+
+<!-- Project Grid --!>
+  <div class="w3-container w3-padding-32 project_grid" id="projects">  
+    <a id="MAGNETIC" class="w3-button w3-round-large w3-center w3-half w3-container w3-hover-opacity bg_magnetic square_project">
+    <h3 class="w3-text-white h3_project"><b>Wireless Robot</b></h3>
+    </a>
+    <a id="REFLOW" class="w3-button w3-round-large w3-center w3-half w3-container w3-hover-opacity bg_reflow square_project">
+    <h3 class="w3-text-white h3_project"><b>Reflow Oven Controller</b></h3>
+    </a>
+    <a id="PULSE" class="w3-button w3-round-large w3-center w3-half w3-container w3-hover-opacity bg_pulse square_project">
+    <h3 class="w3-text-white h3_project"><b>Personal Website</b></h3>
+    </a>
+    <a id="RISC" class="w3-button w3-round-large w3-center w3-half w3-container w3-hover-opacity bg_RISC square_project">
+    <h3 class="w3-text-white h3_project"><b>RISC Machine</b></h3>
+    </a>
+<!-- PROJECT POP UP --!>    
+    <div id="MAGNETIC_ID" class="w3-center w3-padding-32 w3-container magnetic_desc">
+      <div class="left_x">
+        <a id="MAG_BUTTON" class="x_button w3-button w3-container">
+        <p class="w3-text-white">&#10006;</p>
+        </a>
+      </div>
+      <div class="wid_90">
+        <h2 class="w3-text-white" style="text-shadow: 2px 2px #000000"><b>Wireless Robot Using Magnetic Field Data Transfer</b></h2>
+      </div>
+      <div class="par_size">
+        <p class="par_proj">This wirelessly controlled robot was designed with 4 other people for my 2nd year design project. The main challenge of this project was to design the transmitter and reciever ourselves using only low level electronic components. As well it had to transmit the data using a magnetic field. We designed a H-bridge using MOSFET's to control our transmitter. For our receiver we had a few things to consider: weak signals, reducing noise, and converting from analog to digital. To solve these problems we designed our circuit in small modules connected together to get the correct digital signal which could be read by our PIC32 microprocessor. If you look at the <i>figure 1</i> you can see a block diagram of our whole reciever design. 
+       </p>
+       <p class="par_proj">
+A big area that I worked on during the project was the design of the instruction set of how we were going to send and read the data. The design I came up with was that when the transmitter was emitting a magnetic field that would be interpreted as a digital 1 and when the transmitter was not emitting a magnetic field it would be a digital 0. From that we would send each bit for a duration of 10 ms and poll for 100 ms (10 bits). In total we had 8 bits of useful data (minus start and end bit) which results in being able to send 256 different commands, which was needed for us to have precise speed control of the robot. You can look at <i>figure 2</i> for information on our instruction set. </p>
+      </div>
+      <div class="img_div">  
+        <a href="https://ibb.co/ivV2ey"><img src="https://preview.ibb.co/if466d/Reciever_Block.jpg" alt="Reciever_Block" border="0" class="img_size"></a>
+      <p class="figure_proj"><i>figure 1</i></p>
+      </div>
+      <div class="img_div">
+        <a href="https://ibb.co/foJ5zy"><img src="https://preview.ibb.co/eAiG6d/Instruction_Set.jpg" alt="Instruction_Set" border="0" class="img_size"></a>
+      <p class="figure_proj"><i>figure 2</i></p>
+      </div>
+    </div>    
+
+    <div id="REFLOW_ID" class="w3-center w3-padding-32 w3-container reflow_desc">
+      <div class="left_x">
+        <a id="REF_BUTTON" class="x_button w3-button w3-container">
+        <p class="w3-text-white">&#10006;</p>
+        </a>
+      </div>
+      <div class="wid_90">
+        <h2 class="w3-text-white" style="text-shadow: 2px 2px #000000"><b>Reflow Oven Controller</b></h2>
+      </div>
+      <div class="par_size">
+        <p class="par_proj">Printed circuit boards (PCBs) undergo reflow soldering to have surface mount devices (SMDs) permanently assembled and attached to them with solder paste. Through the process of reflow soldering, the PCB is carefully heated up to allow the solder paste to properly liquify and settle while also avoiding damage to the board. The goal of this project was to design, build, and program a Reflow Oven Controller using the AT89LP51RC2 microcontroller.</p>
+        <p class="par_proj">The the main components of our project was the AT89LP51RC2 microcontroller, BO230XS, 7 segment HEX Display, MCP 3008 ADC, and the thermocouple sensor. Looking at the block diagram (<i>figure 1</i>) you can see the layout of our circuit and how the components connect to each other. The AT89LP51RC2 was programmed in assembly language to run a state machine application with the guard conditions being the time and temperature inputted from the thermocouple.The 7 segment display was programmed utilizing 1 of the timers in the AT89LP51RC2 to display the run time of our reflow in each state. In <i>figure 2</i> you can see a diagram of the reflow soldering process which the state machine was based off (except for some minor tweaks to fine tune it).</p>
+      </div>
+      <div class="img_div_2">
+        <a href="https://ibb.co/fzRHgd"><img src="https://preview.ibb.co/eTZQZy/Block_Diagram.jpg" alt="Block_Diagram" border="0" class="img_size"></a> 
+        <p class="figure_proj"><i>figure 1</i></p>
+      </div>
+      <div class="img_div_2">  
+        <img src="https://preview.ibb.co/f0DcWd/Reflow_State_Diagram.jpg" alt="Reflow-State-Diagram" border="0" class="img_size">   
+        <p class="figure_proj"><i>figure 2</i></p>
+      </div>
+    </div>
+
+    <div id="PULSE_ID" class="w3-center w3-padding-32 w3-container pulse_desc">
+      <div class="left_x">
+        <a id="PUL_BUTTON" class="x-button w3-button w3-container">
+        <p class="w3-text-white">&#10006;</p>
+        </a>
+      </div>
+      <div class="wid_90">
+        <h2 class="w3-text-white" style="text-shadow: 2px 2px #000000"><b>Personal Website</b></h2>
+      </div>
+      <div class="par_size_no_float">
+        <p class="par_proj">If you've come this far thanks for looking through my personal website! This website was built upon the Ruby on Rails web application framework which uses a model-view-controller (MVC) framework. The languages and tools used to design this website is HTML, CSS, Javascript, Jquery, Animate.css, and libraries from https://www.w3schools.com. At the beginning of my journey into building my own website alot of the CSS classes were not even programmed by myself, but instead taken from w3schools libraries. But as I progressed further I quickly reached the limitations of w3school libraries and started to write my own CSS classes to attain the layouts of my desire. Eventually I explored into the territories of Javascript and Jquery to run alot of cool animations, smooth scrolling, and interactions within my website. I hope to add more features into my website in the future, but for now that is all!</p>
+      </div>
+      <div class="par_size_2">      
+        <div>
+          <i class="icon-ruby-on-rails-alt" style="color:red; font-size:8em"></i>
+          <i class="icon-javascript-alt" style="color:yellow; font-size:8em"></i>
+        </div>
+        <div>
+        <i class="icon-css" style="color:orange; font-size:8em"></i>
+        <i class="icon-html" style="color:orange; font-size:8em"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="RISC_ID" class="w3-center w3-padding-32 w3-container risc_desc">
+      <div class="left_x">
+       <a id="RISC_BUTTON" class="x_button w3-button w3-container">
+       <p class="w3-text-white">&#10006;</p>
+       </a>
+      </div>
+      <div class="wid_90">
+        <h2 class="w3-text-white" style="text-shadow: 2px 2px #000000"><b>RISC Machine</b></h2>
+      </div>
+      <div class="par_size">
+        <p class="par_proj">This wirelessly controlled robot was designed with 4 other people for my 2nd year design project. The main challenge of this project was to design the transmitter and reciever ourselves using only low level electronic components. As well it had to transmit the data using a magnetic field. We designed a H-bridge using MOSFET's to control our transmitter. For our receiver we had a few things to consider: weak signals, reducing noise, and converting from analog to digital. To solve these problems we designed our circuit in small modules connected together to get the correct digital signal which could be read by our PIC32 microprocessor. If you look at the <i>figure 1</i> you can see a block diagram of our whole reciever design. 
+       </p>
+       <p class="par_proj">
+A big area that I worked on during the project was the design of the instruction set of how we were going to send and read the data. The design I came up with was that when the transmitter was emitting a magnetic field that would be interpreted as a digital 1 and when the transmitter was not emitting a magnetic field it would be a digital 0. From that we would send each bit for a duration of 10 ms and poll for 100 ms (10 bits). With 10 bits you would be able send up to 1024 different commands, which proved to be useful because we wanted to have very precise speed control. You can look at <i>figure 2</i> for information on our instruction set. </p>
+      </div>
+      <div class="img_div">  
+        <a href="https://ibb.co/ivV2ey"><img src="https://preview.ibb.co/if466d/Reciever_Block.jpg" alt="Reciever_Block" border="0" class="img_size"></a>
+      <p class="figure_proj"><i>figure 1</i></p>
+      </div>
+      <div class="img_div">
+        <a href="https://ibb.co/foJ5zy"><img src="https://preview.ibb.co/eAiG6d/Instruction_Set.jpg" alt="Instruction_Set" border="0" class="img_size"></a>
+      <p class="figure_proj"><i>figure 2</i></p>
+      </div>
+    </div>
+  </div>
+
+<!-- Project Description Grid
+<div id="project_description">
+  <div class="w3-container" style="padding: 196px" id="magnetic_description">
+    <h1>Hello Everyone!</h1>
+  </div>
+  <div class="w3-container" style="padding: 196px" id="general_description">
+    <h1>General Description</h1>
+  </div>
+</div>
+--!>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64 above_footer">
+    <h1 class="quote">We can let circumstances rule us, or we can take charge and rule our lives from within - Earl Nightingale</h1>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity above_footer">   
+ <p>Copyright © 2018 Matthew Davison</p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+   } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

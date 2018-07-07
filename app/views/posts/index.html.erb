@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/application.css">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../assets/javascripts/smooth_scroll.js"></script>
+<style>
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+</style>
+</head>
+<style>
+p {
+font-size: 2.5vh;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee,.fa-phone {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="https://github.com/Matt45D" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Github</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="https://github.com/Matt45D" target="_blank" class="w3-bar-item w3-button w3-padding-large">Github</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center bg" style="padding: 182px">
+  <h1 class="animated fadeInDown w3-margin w3-text-white h1_project" style="text-shadow: 3px 3px #000000"><b>Matthew Davison<b></h1>
+  <p class="animated fadeInDown w3-text-white p_electrical" style="text-shadow: 2px 2px #000000"><b>Electrical Engineering Student<b></p>
+  <a class="w3-button w3-black w3-padding-large button_middle w3-round w3-margin-top" href="#section1" style="font-family: Montserrat">Learn More</a>
+  <a class="w3-button w3-black w3-padding-large button_middle w3-round w3-margin-top" href="#section2" style="font-family: Montserrat">Contact Me</a>   
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-32 w3-container" id="section1">
+  <div class="w3-content">
+    <div class="w3-twothird w3-center">
+       <h1><b>About<b></h1>
+       <h5 class="w3-padding-32">Hello! I am Matt, a 3rd year undergraduate student at the University of British Columbia (UBC) studying Electrical Engineering (Biomedical Option). I am currently the Vice President of Academic Affairs at the Electrical and Computer Engineering Student Society (ECESS) and also involved with volunteering with my local IEEE Chapter at UBC. My hobbies include competitive gaming, hockey, weighlifting and hiking. Please look around my website and enjoy!</h5>     
+    </div>
+       <div class="w3-third w3-center w3-container w3-content" style="padding-top: 50px">
+       <img style="width:100%;height:280px" src="https://image.ibb.co/iEBysy/matt_portfolio.jpg" alt="Man standing in front of door">
+       </div>
+  </div>
+</div>
+
+<!-- Small Grid -->
+<div class="w3-row-padding w3-center w3-container" style="padding-bottom: 60px">
+  <div class="w3-container">
+    <div class="w3-third w3-container">
+      <h2>Programming</h2>
+      <h5>Assembly, C, C++, HTML/CSS, JavaScript, jQuery, Bash Shell Scripting, Git, Verilog</h5> 
+    </div>
+    <div class="w3-third w3-container">
+      <h2>Hands-On</h2>
+      <h5>Oscilloscope, Signal Generator, Reflow Soldering, Bandsaw, Drill Press</h5> 
+    </div>
+    <div class="w3-third w3-container">
+      <h2>Software</h2>
+      <h5>Altera Quartus, ModelSim, Solidworks, Vim, Linux/Windows Enviroment</h5>
+    </div>
+  </div>
+  <div style="padding-top: 40px">
+    <a href="matt_resume.pdf" target="_blank" class="w3-button w3-black w3-padding-large w3-large w3-round w3-margin-top" style="font-family: Montserrat">Download Resume</a>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container" id="section2">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-phone w3-padding-64 w3-text-blue w3-margin-right"></i>
+    </div>
+
+      <div class="w3-twothird w3-center">
+      <h1><b>Contact Me<b></h1>
+      <div class="w3-xxxlarge">
+      <a href="https://www.facebook.com/matthew.davison.332" onclick="myFunction()" target="_blank"><i class="fa fa-facebook-official w3-button w3-hover-opacity w3-text-indigo"></i></a>
+      <a href="https://www.linkedin.com/in/matthew-davison-30a24a131/" onclick="myFunction()" target="_blank"><i class="fa fa-linkedin w3-button w3-hover-opacity" style="padding-left: 20px"></i></a>
+      </div>
+      <h5><b>Email: Matt45Davison@gmail.com</b></h5>
+      <h5><b>Phone: +1 778 242 7060</b></h5>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64 above_footer">
+    <h1 class="quote">We can let circumstances rule us, or we can take charge and rule our lives from within - Earl Nightingale</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity above_footer">  
+ <p>Copyright © 2018 Matthew Davison</p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.white-box {
+	background-color: white;
+	color: black;
+	width: 10px;
+	height: 10px;
+}
+
+.up {
+	width: 100px;
+	height: 600px;
+}
+
+.down {
+	width: 100px;
+	height: 400px;
+}
+
+.bg {
+background-image: url("http://data.1freewallpapers.com/download/apple-computer-laptop-mug-tables-desk.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bg_projects {
+background-image: url("https://images3.alphacoders.com/705/705855.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bg_reflow {
+background-image: url("https://preview.ibb.co/h9iHkJ/reflow_oven.jpg");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
+.bg_magnetic {
+background-image: url("https://image.ibb.co/kUseXy/magnetic_controlled_robot.jpg");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
+.bg_RISC {
+background-image: url("https://cdn.hackaday.io/images/5882201484013698060.png");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
+.bg_pulse {
+background-image: url("https://udemy-images.udemy.com/course/480x270/465210_7bfb_2.jpg?siteID=eyzsD2QGsYg-FpbBUs_jJKsfEz7sQ6ikPQ&LSNPUBID=eyzsD2QGsYg");
+height: 100%;
+background-position: center;
+background-size: cover
+}
+
+.project_grid {
+background-color: #ffffff;
+height: 100%;
+}
+
+.square_project {
+height: 45%;
+max-width: 27%;
+padding: 2% 2%;
+margin: 2% 2%;
+margin-left: 4%;
+}
+
+.h3_project {
+font-size: 3.1vh;
+}
+
+.h1_project {
+font-size: 11.0vh;
+}
+
+.p_electrical {
+font-size: 4.0vh;
+}
+
+.above_footer {
+height: 40%
+}
+
+.quote {
+font-size: 3.7vh;
+padding-top: 2%;
+}
+
+.button_middle {
+font-size: 3.0vh; 
+}
+
+.button_middle_lrg {
+font-size: 6.0vw;
+}
+
+.magnetic_desc {
+height: 100%;
+background-color: #330011;
+display: none;
+}
+
+.reflow_desc {
+height: 100%;
+background-color: #333300;
+display: none;
+}
+
+.pulse_desc {
+height: 100%;
+background-color: #00331f;
+display: none;
+}
+
+.risc_desc {
+height: 100%;
+background-color: #001e33;
+display: none;
+}
+
+.x_button { 
+position: relative;
+}
+
+.left_x {
+top: -33px;
+right: 17px;
+float: left;
+position: relative;
+}
+
+.wid_90 {
+width: 90%;
+margin-left: 30px;
+top: -20px;
+position: relative;
+}
+
+.par_proj {
+color: white;
+font-size: 2.4vh;
+}
+
+.par_size {
+left: 20px;
+position: relative;
+width: 60%;
+float: left;
+}
+
+.par_size_no_float {
+left: 7%;
+position: relative;
+width: 45%;
+}
+
+.par_size_2 {
+bottom: 70%;
+right: 1%;
+position: relative;
+width: 45%;
+float: right;
+}
+
+.img_size {
+width: 100%;
+padding-top: 3%;
+}
+
+.img_div {
+bottom: 80%;
+left: 66%;
+position: relative;
+width: 30%;
+}
+
+.img_div_2 {
+bottom: 75%;
+left: 66%;
+position: relative;
+width: 30%;
+}
+
+
+.figure_proj {
+color: white;
+font-size: 10px;
+position: relative;
+top: 40%
+}
